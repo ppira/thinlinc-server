@@ -16,7 +16,7 @@ optdepends=('nfs-utils: Local drive redirection'
 _archive_name=tl-${pkgver}-server
 source=("${_archive_name}.zip::https://www.cendio.com/downloads/server/download.py"
         'LICENSE')
-sha256sums=('SKIP'
+sha256sums=('7a2f5f34fe5067d3932c7231ae63571dad8a67aaf8323df695d49933b93825d2'
             '179583f1e2f61a9a75a99bbe8bb988e35a0216fc2ddcbd4c85ad8bdc70c3149e')
 
 _extract_dir="extract"
