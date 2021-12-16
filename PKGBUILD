@@ -12,7 +12,7 @@ install=${pkgname}.install
 depends=('dbus' 'ghostscript' 'glibc' 'hicolor-icon-theme' 'iproute2' 'krb5'
          'libasyncns' 'libcap' 'libsndfile' 'libx11' 'libxcb' 'libxcrypt' 'nspr'
          'nss' 'pam' 'procps-ng' 'python' 'python-gobject' 'rtkit'
-         'smtp-forwarder' 'systemd' 'xdg-utils' 'xorg-xauth' 'zlib')
+         'systemd' 'xdg-utils' 'xorg-xauth' 'zlib')
 optdepends=('apache: Web integration'
             'mod_nss: Web integration'
             'nfs-utils: Local drive redirection'
