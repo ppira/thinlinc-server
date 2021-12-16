@@ -2,7 +2,7 @@
 
 pkgname=thinlinc-server
 pkgver=4.13.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Cendio ThinLinc Linux remote desktop server"
 arch=('i686' 'x86_64')
 url="http://www.cendio.com/"
@@ -17,6 +17,9 @@ optdepends=('apache: Web integration'
             'mod_nss: Web integration'
             'nfs-utils: Local drive redirection'
             'python-ldap: LDAP integration tools')
+backup=(opt/thinlinc/etc/conf.d/{nearest.hconf,sessionstart.hconf,tl-desktop-customizer.hconf,\
+tl-mount-localdrives.hconf,vsmagent.hconf,vsmserver.hconf,profiles.hconf,shadowing.hconf,\
+tl-ldap-certalias.hconf,tlwebadm.hconf,vsm.hconf,webaccess.hconf})
 
 _archive_name=tl-${pkgver}-server
 
