@@ -1,8 +1,8 @@
 # Maintainer: Cebtenzzre <cebtenzzre (at) gmail (dot) com>
 
 pkgname=thinlinc-server
-pkgver=4.15.0
-pkgrel=2
+pkgver=4.17.0
+pkgrel=1
 pkgdesc="Cendio ThinLinc Linux remote desktop server"
 arch=('i686' 'x86_64')
 url="http://www.cendio.com/"
@@ -30,7 +30,7 @@ source=("${_archive_name}.zip::https://www.cendio.com/downloads/server/tl-${pkgv
         'tlwebadm.service'
         'vsmagent.service'
         'vsmserver.service')
-sha256sums=('a0d19a66b53e9015e81acab8add05157410efe3b73637e9588cf894db21c7826'
+sha256sums=('a178d59dcc5d90a4360b70a151d4933372b110304b5d7d1f0610e325ec29d82c'
             '179583f1e2f61a9a75a99bbe8bb988e35a0216fc2ddcbd4c85ad8bdc70c3149e'
             '8e70ef23f9716dcb100eba660932e7f5d05351d63074fb262cf925812dbdbb63'
             '5a92c5beac6c64487debd92a4d94b56074b9f9b0cd38d154a14a320105f3bccd'
@@ -58,7 +58,8 @@ package()
     cp -aR etc/ opt/ usr/ var/ "$pkgdir"
 
     install -dm755 "$pkgdir"/usr/lib
-    cp -aR lib64/* "$pkgdir"/usr/lib
+    cp -aR usr/lib64/* "$pkgdir"/usr/lib
+    rm -rf "$pkgdir"/usr/lib64
 
     cd "$srcdir"
     install -Dm644 LICENSE             "$pkgdir"/usr/share/licenses/$pkgname/LICENSE
