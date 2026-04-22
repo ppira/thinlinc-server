@@ -1,7 +1,7 @@
 # Maintainer: Papira <papira (at) flutter (dot) se>
 
 pkgname=thinlinc-server
-pkgver=4.20.0
+pkgver=4.20.1
 pkgrel=1
 pkgdesc="Cendio ThinLinc Linux remote desktop server"
 arch=('i686' 'x86_64')
@@ -30,7 +30,7 @@ source=("${_archive_name}.zip::https://www.cendio.com/downloads/server/tl-${pkgv
         'tlwebadm.service'
         'vsmagent.service'
         'vsmserver.service')
-sha256sums=('47e493a30063067f10db198182f6440d685a14b5d174db42c8088540d78910ff'
+sha256sums=('4a7f217ccff9ff58606e3867e1fd0c951762752d2623bfedc3282d653803e9ac'
             '179583f1e2f61a9a75a99bbe8bb988e35a0216fc2ddcbd4c85ad8bdc70c3149e'
             '8e70ef23f9716dcb100eba660932e7f5d05351d63074fb262cf925812dbdbb63'
             '5a92c5beac6c64487debd92a4d94b56074b9f9b0cd38d154a14a320105f3bccd'
